@@ -10,6 +10,8 @@ describe("Sumar", () => {
     it("Deberia devolver un 5 con 3, 2", () => {
         expect(suma("3, 2")).toEqual(5);
     });
-    
+    it("Deberia devolver un 5 con 3-2", () => {
+        expect(suma("3-2")).toEqual(5);
+    });
   });
   
