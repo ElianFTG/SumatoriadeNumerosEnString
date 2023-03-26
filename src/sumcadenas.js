@@ -1,10 +1,12 @@
 function suma(cadena) {
-    if(cadena == "") {
-        return 0;
+    let sumatoria = 0;
+    if(cadena != "") {
+        let elementosdelacadena = cadena.split([","]);
+        for(var i = 0; i < elementosdelacadena.length; i ++) {
+            sumatoria += parseInt(elementosdelacadena[i]);
+        }
     }
-    else {
-        return parseInt(cadena);
-    }
+    return sumatoria;
   }
   
   export default suma;
