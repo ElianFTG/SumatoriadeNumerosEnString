@@ -3,9 +3,13 @@ function suma(cadena) {
     if(cadena != "") {
         let elementosdelacadena = cadena.split(/,|-/);
         for(var i = 0; i < elementosdelacadena.length; i ++) {
-            sumatoria += parseInt(elementosdelacadena[i]);
+            if(parseInt(elementosdelacadena[i]) <= 1000) {
+                sumatoria += parseInt(elementosdelacadena[i]);
+            }
+            
         }
     }
+    console.log(sumatoria);
     return sumatoria;
   }
   
